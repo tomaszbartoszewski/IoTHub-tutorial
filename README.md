@@ -19,11 +19,11 @@ Pick from the list of options IoT Hub, if you haven't created any IoT Hub before
 
 On basic screen pick your subscription, resources, location and the IoT Hub name, don't finishe yet, as we have to change scale tier.
 
-![Create IoT Hub](images/Create_IotHub_Basic.png)
+![Create IoT Hub, Basic](images/Create_IotHub_Basic.png)
 
 When you set all the values, go next to Size and Scale part, by default S1 will be selected. We want to use F1: Free tier, it allows you to send 8000 messages per day without paying anything. You are allowed to have only one IoT Hub with this tier, so make sure that you don't run our of messages per day while testing your application.
 
-![Create IoT Hub](images/Create_IotHub_SizeAndScale.png)
+![Create IoT Hub, Size and Scale](images/Create_IoTHub_SizeAndScale.png)
 
 Now you can press Review + create, make sure all the values are as expected and press Create. It will take about 2 minutes to provision it.
 
