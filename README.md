@@ -47,55 +47,55 @@ We have everything ready to connect from code, you could write it on your own. T
 
 We want to install extension for VS Code called Azure IoT Hub Toolkit.
 
-![VS Code, IoT Hub Toolkit](images/Azure_IoT_Hub_Toolkit.png)
+![VS Code, IoT Hub Toolkit](images/Azure_IoT_Hub_Toolkit.PNG)
 
 We can connect to IoT Hub.
 
-![IoT Hub Toolkit, No IoT Hub connected](images/Connect_To_IoTHub.png)
+![IoT Hub Toolkit, No IoT Hub connected](images/Connect_To_IoTHub.PNG)
 
 You will be asked to select subscription (you may have to log in first).
 
-![IoT Hub Toolkit, Select subscription](images/Connect_To_IoTHub_Select_Subscription.png)
+![IoT Hub Toolkit, Select subscription](images/Connect_To_IoTHub_Select_Subscription.PNG)
 
 Next pop up will ask for IoT Hub, you will likely have just one on the list, unless you created some before.
 
-![IoT Hub Toolkit, Select IoT Hub](images/Connect_To_IoTHub_Select_IoTHub.png)
+![IoT Hub Toolkit, Select IoT Hub](images/Connect_To_IoTHub_Select_IoTHub.PNG)
 
 That should result in successful connection and you should see your device's name on the list.
 
-![IoT Hub Toolkit, List of devices](images/Connect_To_IoTHub_Select_DeviceList.png)
+![IoT Hub Toolkit, List of devices](images/Connect_To_IoTHub_Select_DeviceList.PNG)
 
 It's time to send a message to a device. Right click on it and look for "Start monitoring C2D Message".
 
-![IoT Hub Toolkit, Monitor C2D Message](images/Connect_To_IoTHub_Start_Monitoring_C2D.png)
+![IoT Hub Toolkit, Monitor C2D Message](images/Connect_To_IoTHub_Start_Monitoring_C2D.PNG)
 
 Let's go back to the portal, we will send from there a message to device.
 
-![Azure portal, Device overview](images/Connect_To_IoTHub_DeviceInfo.png)
+![Azure portal, Device overview](images/Connect_To_IoTHub_DeviceInfo.PNG)
 
 Select "Message to device" tab and send some text.
 
-![Azure portal, Send message to device](images/Connect_To_IoTHub_Send_Message.png)
+![Azure portal, Send message to device](images/Connect_To_IoTHub_Send_Message.PNG)
 
 Go back to VS Code, you should now see your message in the output window. When you right click you can stop monitoring.
 
-![IoT Hub Toolkit, Received message](images/Connect_To_IoTHub_Stop_Monitoring.png)
+![IoT Hub Toolkit, Received message](images/Connect_To_IoTHub_Stop_Monitoring.PNG)
 
 Right click on device name and select "Generate code", you should see a pop up asking for language choice.
 
-![IoT Hub Toolkit, Pick language](images/Connect_To_IoTHub_Generate_Code_Languages.png)
+![IoT Hub Toolkit, Pick language](images/Connect_To_IoTHub_Generate_Code_Languages.PNG)
 
 You should see as one option "Send device-to-cloud message". Pick it and save project on your computer.
 
-![IoT Hub Toolkit, Pick template](images/Connect_To_IoTHub_Code_To_Send_D2C_Message.png)
+![IoT Hub Toolkit, Pick template](images/Connect_To_IoTHub_Code_To_Send_D2C_Message.PNG)
 
 Go back and right click on device name again, this time pick "Start monitoring D2C Message". Go now to your project and run it. Remember to stop your code after few messages, as you have 8000 limit per day for your IoT Hub.
 
-![IoT Hub Toolkit, Send telemetry](images/Connect_To_IoTHub_Send_Telemetry.png)
+![IoT Hub Toolkit, Send telemetry](images/Connect_To_IoTHub_Send_Telemetry.PNG)
 
 As a result in VS Code with monitoring turned on, you should see messages sent from device.
 
-![IoT Hub Toolkit, Received telemetry](images/Connect_To_IoTHub_Monitor_Telemetry.png)
+![IoT Hub Toolkit, Received telemetry](images/Connect_To_IoTHub_Monitor_Telemetry.PNG)
 
 And we now have working code for our device which communicates with IoT Hub.
 
