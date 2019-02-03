@@ -63,7 +63,7 @@ Next pop up will ask for IoT Hub, you will likely have just one on the list, unl
 
 That should result in successful connection and you should see your device's name on the list.
 
-![IoT Hub Toolkit, List of devices](images/Connect_To_IoTHub_Select_DeviceList.PNG)
+![IoT Hub Toolkit, List of devices](images/Connect_To_IoTHub_DeviceList.PNG)
 
 It's time to send a message to a device. Right click on it and look for "Start monitoring C2D Message".
 
