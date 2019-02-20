@@ -112,19 +112,19 @@ https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-late
 
 Then run this command in powershell:
 
-```markdown powershell
+```
 az extension add --name azure-cli-iot-ext
 ```
 
 Now you can run script, first parameter is name of IoT Hub, second is your device Id:
 
-```markdown powershell
+```
 .\generateConfig.ps1 'first-try' 'bedroom'
 ```
 
 If you don't want to run script, you can generate configs manually. For Device you will need this config.json (you can find device connection string on Device details page):
 
-```markdown json
+```
 {
     "DeviceConnectionString":  ""
 }
@@ -134,7 +134,7 @@ Place it inside both Device and Device_Processing_Commands directories.
 
 Service require more configuration, you can find it on Built-in endpoints in box Event Hub - compatible endpoint. For IotHubConnectionString go to Shared access policies and select iothubowner (only for this demo, be sensible when running on production):
 
-```markdown json
+```
 {
     "EventHubsCompatibleEndpoint":  "",
     "IotHubSasKeyName":  "",
@@ -150,7 +150,7 @@ Now we can run code.
 
 Every example should work after running
 
-```markdown powershell
+```
 dotnet restore; dotnet build; dotnet ru
 n
 ```
