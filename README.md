@@ -151,8 +151,7 @@ Now we can run code.
 Every example should work after running
 
 ```
-dotnet restore; dotnet build; dotnet ru
-n
+dotnet restore; dotnet build; dotnet run
 ```
 
 ### Device directory
