@@ -193,4 +193,4 @@ https://twitter.com/t_bartoszewski
 
 QR Code to this website
 
-![IoT Hub Toolkit, Received telemetry](images/qrcode_url.PNG)
+![IoT Hub Toolkit, Received telemetry](images/qrcode_url.png)
