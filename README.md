@@ -99,43 +99,98 @@ As a result in VS Code with monitoring turned on, you should see messages sent f
 
 And we now have working code for our device which communicates with IoT Hub.
 
-----------------
+## Writing code
 
+For the rest of tutorial you will need code from this repository.
 
-## Welcome to GitHub Pages
+https://github.com/tomaszbartoszewski/IoTHub-presentation-examples
 
-You can use the [editor on GitHub](https://github.com/tomaszbartoszewski/IoTHub-tutorial/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+There are few applications. First thing which you will have to do will be generating config files for all of them, you can either copy values from IoT Hub, but I prepared a script which access them using azure cli.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Check this website for installing it
+https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest
 
-### Markdown
+Then run this command in powershell:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```markdown powershell
+az extension add --name azure-cli-iot-ext
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Now you can run script, first parameter is name of IoT Hub, second is your device Id:
 
-### Jekyll Themes
+```markdown powershell
+.\generateConfig.ps1 'first-try' 'bedroom'
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/tomaszbartoszewski/IoTHub-tutorial/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+If you don't want to run script, you can generate configs manually. For Device you will need this config.json (you can find device connection string on Device details page):
 
-### Support or Contact
+```markdown json
+{
+    "DeviceConnectionString":  ""
+}
+```
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Place it inside both Device and Device_Processing_Commands directories.
+
+Service require more configuration, you can find it on Built-in endpoints in box Event Hub - compatible endpoint. For IotHubConnectionString go to Shared access policies and select iothubowner (only for this demo, be sensible when running on production):
+
+```markdown json
+{
+    "EventHubsCompatibleEndpoint":  "",
+    "IotHubSasKeyName":  "",
+    "EventHubsCompatiblePath":  "",
+    "IotHubConnectionString":  "",
+    "IotHubSasKey":  ""
+}
+```
+
+Place it inside all 4 Service directories.
+
+Now we can run code.
+
+Every example should work after running
+
+```markdown powershell
+dotnet restore; dotnet build; dotnet ru
+n
+```
+
+### Device directory
+
+It will run device simulator which sends random temperature every second. You can turn on monitoring in Azure IoT Hub Devices extension which we used before.
+
+### Service directory
+
+Continue running Device code. We can now start service processing telemetry. It will display received values on console.
+
+### Service_Just_Id_And_Value directory
+
+It's changed version to display only device Id and it's temperature.
+
+### Service_Send_Command directory
+
+Now it will read temperatures from IoT Hub and send commands to device. Because our Device code can't process commands, it's time to run new code for simulating device.
+
+### Device_Processing_Commands directory
+
+It will now change it's behaviour depending if last command was turn on or off. Turned off it will lower it's temperature with every step, if on it will increase it.
+
+### Service_Send_Command_Ack directory
+
+Our service was not aware if message was delivered correctly, if you would like to get information about messages run this example. You can see it tries to collect feedback in batches instead of getting it one by one.
+
+If you want, try to add one more device to your IoT Hub and run two device simulators at the same time.
+
+Hopefully you enjoyed this tutorial. If you want to learn more, check IoT Hub documentation with different examples https://docs.microsoft.com/en-us/azure/iot-hub/
+
+## Thank you
+
+Thank you for your time, I hope you enjoyed playing with IoT Hub. Please let me know if something is not clear.
+
+Tomasz Bartoszewski
+
+https://twitter.com/t_bartoszewski
+
+QR Code to this website
+
+![IoT Hub Toolkit, Received telemetry](images/qrcode_url.PNG)
