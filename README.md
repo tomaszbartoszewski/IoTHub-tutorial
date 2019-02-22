@@ -182,6 +182,26 @@ If you want, try to add one more device to your IoT Hub and run two device simul
 
 Hopefully you enjoyed this tutorial. If you want to learn more, check IoT Hub documentation with different examples https://docs.microsoft.com/en-us/azure/iot-hub/
 
+## Useful links:
+
+Slides: https://www.slideshare.net/TomaszBartoszewski/saving-the-world-with-iot
+
+Code examples: https://github.com/tomaszbartoszewski/IoTHub-presentation-examples
+
+This extension is great:
+https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-toolkit
+
+If you want to deploy something easily on RPi this is cool website https://www.balena.io/ you will run your code in docker, very little setup to connect RPi to it.
+
+If like me you are not good with electronics, this board is great addition to RPi 3: https://www.raspberrypi.org/products/sense-hat/
+
+Code for the RPi demo is very messy, I did hacks until it worked:
+https://github.com/tomaszbartoszewski/EnergySupervisor
+https://github.com/tomaszbartoszewski/LED-RaspberryPi-Python
+
+Video of the demo:
+https://www.youtube.com/watch?v=54Xr9DHUjBY
+
 ## Thank you
 
 Thank you for your time, I hope you enjoyed playing with IoT Hub. Please let me know if something is not clear.
