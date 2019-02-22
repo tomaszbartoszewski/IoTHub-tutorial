@@ -8,8 +8,8 @@ The plan is to create an IoT Hub, add a device (run the code in Console App) whi
 
 ### Prerequisites
 
-If you don't have an Azure account already, create it https://azure.microsoft.com/en-gb/free/
-We will use Visual Studio Code for generating code and editing it https://code.visualstudio.com/
+If you don't have an Azure account already, create it [Azure account](https://azure.microsoft.com/en-gb/free/)
+We will use Visual Studio Code for generating code and editing it [VS Code](https://code.visualstudio.com/)
 
 ### Create IoT Hub
 
@@ -103,12 +103,12 @@ And we now have working code for our device which communicates with IoT Hub.
 
 For the rest of tutorial you will need code from this repository.
 
-https://github.com/tomaszbartoszewski/IoTHub-presentation-examples
+[Code on github](https://github.com/tomaszbartoszewski/IoTHub-presentation-examples)
 
 There are few applications. First thing which you will have to do will be generating config files for all of them, you can either copy values from IoT Hub, but I prepared a script which access them using azure cli.
 
 Check this website for installing it
-https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest
+[Azure Cli](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
 
 Then run this command in powershell:
 
@@ -180,27 +180,25 @@ Our service was not aware if message was delivered correctly, if you would like 
 
 If you want, try to add one more device to your IoT Hub and run two device simulators at the same time.
 
-Hopefully you enjoyed this tutorial. If you want to learn more, check IoT Hub documentation with different examples https://docs.microsoft.com/en-us/azure/iot-hub/
+Hopefully you enjoyed this tutorial. If you want to learn more, check IoT Hub documentation with different examples [Docs](https://docs.microsoft.com/en-us/azure/iot-hub/)
 
 ## Useful links:
 
-Slides: https://www.slideshare.net/TomaszBartoszewski/saving-the-world-with-iot
+[Slides](https://www.slideshare.net/TomaszBartoszewski/saving-the-world-with-iot)
 
-Code examples: https://github.com/tomaszbartoszewski/IoTHub-presentation-examples
+[Code examples](https://github.com/tomaszbartoszewski/IoTHub-presentation-examples)
 
-This extension is great:
-https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-toolkit
+This extension is great [Azure IoT Hub Toolkit](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-toolkit)
 
-If you want to deploy something easily on RPi this is cool website https://www.balena.io/ you will run your code in docker, very little setup to connect RPi to it.
+If you want to deploy something easily on RPi this is cool website [Balena](https://www.balena.io/) you will run your code in docker, very little setup to connect RPi to it.
 
-If like me you are not good with electronics, this board is great addition to RPi 3: https://www.raspberrypi.org/products/sense-hat/
+If like me you are not good with electronics, this board is great addition to RPi 3: [Sense Hat](https://www.raspberrypi.org/products/sense-hat/)
 
 Code for the RPi demo is very messy, I did hacks until it worked:
-https://github.com/tomaszbartoszewski/EnergySupervisor
-https://github.com/tomaszbartoszewski/LED-RaspberryPi-Python
+[Website - service controlling everything](https://github.com/tomaszbartoszewski/EnergySupervisor)
+[Code on RPi](https://github.com/tomaszbartoszewski/LED-RaspberryPi-Python)
 
-Video of the demo:
-https://www.youtube.com/watch?v=54Xr9DHUjBY
+[Video of the demo](https://www.youtube.com/watch?v=54Xr9DHUjBY)
 
 ## Thank you
 
@@ -208,7 +206,9 @@ Thank you for your time, I hope you enjoyed playing with IoT Hub. Please let me 
 
 Tomasz Bartoszewski
 
-https://twitter.com/t_bartoszewski
+[Twitter](https://twitter.com/t_bartoszewski)
+
+[Github](https://github.com/tomaszbartoszewski)
 
 QR Code to this website
 
