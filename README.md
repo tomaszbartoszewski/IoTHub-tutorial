@@ -186,6 +186,8 @@ Hopefully you enjoyed this tutorial. If you want to learn more, check IoT Hub do
 
 [Slides](https://www.slideshare.net/TomaszBartoszewski/saving-the-world-with-iot)
 
+[Recording from London .Net User Group](https://skillsmatter.com/skillscasts/13000-saving-the-world-with-iot)
+
 [Code examples](https://github.com/tomaszbartoszewski/IoTHub-presentation-examples)
 
 This extension is great [Azure IoT Hub Toolkit](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-toolkit)
