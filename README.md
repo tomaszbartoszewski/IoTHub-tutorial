@@ -184,7 +184,9 @@ Hopefully you enjoyed this tutorial. If you want to learn more, check IoT Hub do
 
 ## Useful links:
 
-[Slides](https://www.slideshare.net/TomaszBartoszewski/saving-the-world-with-iot)
+[Slides from London .Net User Group](https://www.slideshare.net/TomaszBartoszewski/saving-the-world-with-iot)
+
+[Slides from DDD South West 2019](https://www.slideshare.net/TomaszBartoszewski/ddd-south-west-2019-saving-the-world-with-iot)
 
 [Recording from London .Net User Group](https://skillsmatter.com/skillscasts/13000-saving-the-world-with-iot)
 
