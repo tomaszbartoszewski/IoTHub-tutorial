@@ -184,9 +184,11 @@ Hopefully you enjoyed this tutorial. If you want to learn more, check IoT Hub do
 
 ## Useful links:
 
-[Slides](https://www.slideshare.net/TomaszBartoszewski/saving-the-world-with-iot)
+[Most recent slides from Nottingham IoT](https://www.slideshare.net/TomaszBartoszewski/nottingham-iot-saving-the-world-with-iot)
 
-[Recording from London .Net User Group](https://skillsmatter.com/skillscasts/13000-saving-the-world-with-iot)
+[Slides from London .Net User Group](https://www.slideshare.net/TomaszBartoszewski/saving-the-world-with-iot)
+
+[Recording from London Azure (ignore wrong title)](https://www.youtube.com/watch?v=fMUI2ITTHUU)
 
 [Code examples](https://github.com/tomaszbartoszewski/IoTHub-presentation-examples)
 
