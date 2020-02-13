@@ -188,6 +188,8 @@ Hopefully you enjoyed this tutorial. If you want to learn more, check IoT Hub do
 
 [Slides from London .Net User Group](https://www.slideshare.net/TomaszBartoszewski/saving-the-world-with-iot)
 
+[Slides from DDD South West 2019](https://www.slideshare.net/TomaszBartoszewski/ddd-south-west-2019-saving-the-world-with-iot)
+
 [Recording from London Azure (ignore wrong title)](https://www.youtube.com/watch?v=fMUI2ITTHUU)
 
 [Code examples](https://github.com/tomaszbartoszewski/IoTHub-presentation-examples)
